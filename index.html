@@ -336,4 +336,120 @@
 
 </body>
 
+</html>          <h3 class="font-bold text-lg mb-4">App & Database</h3>
+          <ul class="space-y-2 text-[var(--slate)] text-sm">
+            <li>Cross-platform app development</li>
+            <li>Database management — SQL/NoSQL</li>
+            <li>Data modeling & schema design</li>
+            <li>API integration</li>
+            <li>Problem solving & logic building</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold section-title">Featured Projects</h2>
+      <p class="text-[var(--slate)] mt-4 max-w-2xl">
+        A selection of what I've worked on. Live links and detailed case studies coming soon.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-10">
+        <div class="card bg-[var(--bg-soft)] rounded-2xl border border-[var(--line)] p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-lg">E-commerce Automation Suite</h3>
+            <i class="fas fa-robot text-[var(--green)]"></i>
+          </div>
+          <p class="text-[var(--slate)] text-sm leading-relaxed mb-5">
+            A custom application automating product listing, inventory sync, and order processing
+            across Amazon, eBay, and Walmart. Backend logic built in Python.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip bg-[var(--green-soft)] text-[var(--green)] px-3 py-1 rounded-full">Python</span>
+            <span class="chip bg-[var(--green-soft)] text-[var(--green)] px-3 py-1 rounded-full">API Integration</span>
+            <span class="chip bg-[var(--green-soft)] text-[var(--green)] px-3 py-1 rounded-full">Database</span>
+          </div>
+        </div>
+
+        <div class="card bg-[var(--bg-soft)] rounded-2xl border border-[var(--line)] p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-lg">Project Management System</h3>
+            <i class="fas fa-tasks text-[var(--blue)]"></i>
+          </div>
+          <p class="text-[var(--slate)] text-sm leading-relaxed mb-5">
+            A web app for managing student projects, tracking progress, and facilitating
+            communication between students and supervisors, with secure role-based access.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip bg-[var(--blue-soft)] text-[var(--blue)] px-3 py-1 rounded-full">Java</span>
+            <span class="chip bg-[var(--blue-soft)] text-[var(--blue)] px-3 py-1 rounded-full">Web Dev</span>
+            <span class="chip bg-[var(--blue-soft)] text-[var(--blue)] px-3 py-1 rounded-full">SQL</span>
+          </div>
+        </div>
+
+        <div class="card bg-[var(--bg-soft)] rounded-2xl border border-[var(--line)] p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-bold text-lg">Data Structure Implementations</h3>
+            <i class="fas fa-cubes text-[var(--slate)]"></i>
+          </div>
+          <p class="text-[var(--slate)] text-sm leading-relaxed mb-5">
+            A collection of implementations for core data structures and algorithms — trees,
+            graphs, sorting algorithms, and linked lists — written in C++.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip bg-gray-100 text-[var(--slate)] px-3 py-1 rounded-full">C++</span>
+            <span class="chip bg-gray-100 text-[var(--slate)] px-3 py-1 rounded-full">DSA</span>
+            <span class="chip bg-gray-100 text-[var(--slate)] px-3 py-1 rounded-full">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 sm:py-24 bg-[var(--bg-soft)]">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold section-title text-center mx-auto" style="width:fit-content">Get In Touch</h2>
+
+      <div class="flex justify-center mt-10">
+        <div class="bg-white p-8 sm:p-10 rounded-2xl border border-[var(--line)] shadow-sm max-w-md w-full text-center">
+          <p class="text-[var(--slate)] leading-relaxed mb-6">
+            Currently looking for internship opportunities and freelance projects where I can apply
+            my development and e-commerce expertise. Feel free to connect.
+          </p>
+          <div class="flex items-center justify-center gap-3">
+            <i class="fas fa-envelope text-xl text-[var(--blue)]"></i>
+            <a href="mailto:bakikhan0857@gmail.com"
+              class="text-[var(--ink)] font-semibold hover:text-[var(--blue)] transition duration-300">
+              bakikhan0857@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[var(--ink)] py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center text-white/50 text-sm">
+      <p>&copy; <span id="current-year"></span> Abubakar Khan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-button').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    document.querySelectorAll('#mobile-menu a').forEach(item => {
+      item.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
 </html>
